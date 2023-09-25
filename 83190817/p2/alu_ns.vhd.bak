@@ -1,0 +1,12 @@
+--ALU_NS
+
+entity alu_ns is
+port
+(
+input1   : in std_logic_vector(7 downto 0);
+input2   : in std_logic_vector(7 downto 0);
+sel      : in std_logic_vector(3 downto 0);
+output   : in std_logic_vector(7 downto 0);
+overflow : out std_logic
+);
+end alu_ns

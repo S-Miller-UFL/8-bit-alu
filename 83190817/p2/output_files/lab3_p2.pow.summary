@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Sat Sep 23 22:35:51 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : lab3_p2
+Top-level Entity Name : alu_ns
+Family : Cyclone IV GX
+Device : EP4CGX15BF14A7
+Power Models : Final
+Total Thermal Power Dissipation : 66.63 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 58.93 mW
+I/O Thermal Power Dissipation : 7.70 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

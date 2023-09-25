@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+--this is just an example for generic versions of an adder
+
+entity adder8numeric is
+generic(wdith: positive :=8)
+ port(
+ input1, input2 : in std_logic_vector(width-1 downto 0);
+ carry_in : in std_logic;
+ sum : out std_logic_vector(width-1 downto 0);
+ carry_out : out std_logic
+ );
+end adder8numeric;
+
+architecture str of adder8numeric is
+signal tempin1, tempin2:unsigned (width-1 downto 0);
+signal tempsum: unsigned (width downto 0);
+
+begin
+
+tempin1 <= unsigned(input1);
+tempin2 <= unsigned(input2);
+tempsum <= tempin1 + tempin2 + unsigned(carry_in);
+	sum <= std_logic(tempsum(width-1 downto 0));
+carry_out <= tempsum(width);
+
+end;
+tempsum <= unsigned(input1) + unsigned(input2) + unsigned(carry_in);

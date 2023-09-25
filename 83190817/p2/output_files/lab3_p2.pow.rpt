@@ -1,0 +1,842 @@
+Power Analyzer report for lab3_p2
+Sat Sep 23 22:35:51 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Current Drawn from Voltage Supplies Summary
+ 11. VCCIO Supply Current Drawn by I/O Bank
+ 12. VCCIO Supply Current Drawn by Voltage
+ 13. Confidence Metric Details
+ 14. Signal Activities
+ 15. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.06        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.9%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Sat Sep 23 22:35:51 2023            ;
+; Quartus Prime Version                  ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition      ;
+; Revision Name                          ; lab3_p2                                          ;
+; Top-level Entity Name                  ; alu_ns                                           ;
+; Family                                 ; Cyclone IV GX                                    ;
+; Device                                 ; EP4CGX15BF14A7                                   ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 66.63 mW                                         ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 58.93 mW                                         ;
+; I/O Thermal Power Dissipation          ; 7.70 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                        ;
++------------------------------------------------------------------+-----------------------------+---------------+
+; Option                                                           ; Setting                     ; Default Value ;
++------------------------------------------------------------------+-----------------------------+---------------+
+; Use smart compilation                                            ; Off                         ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                          ; On            ;
+; Enable compact report table                                      ; Off                         ; Off           ;
+; Use vectorless estimation                                        ; Off                         ; On            ;
+; Preset Cooling Solution                                          ; No Heat Sink With Still Air ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)         ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                       ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                       ; 12.5%         ;
+; Use Input Files                                                  ; Off                         ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                          ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                         ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                         ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                     ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                          ; On            ;
+; Specified Junction Temperature                                   ; 25                          ; 25            ;
+; Ambient Temperature                                              ; 25                          ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                         ; Off           ;
+; Board Temperature                                                ; 25                          ; 25            ;
++------------------------------------------------------------------+-----------------------------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Indeterminate Toggle Rates                                                                                                                         ;
++----------------------------------------------------------------------------------------------------------------------+-----------------------------+
+; Node                                                                                                                 ; Reason                      ;
++----------------------------------------------------------------------------------------------------------------------+-----------------------------+
+; Add1~0                                                                                                               ; No valid clock domain found ;
+; Add1~1                                                                                                               ; No valid clock domain found ;
+; Add0~0                                                                                                               ; No valid clock domain found ;
+; Add0~1                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~3     ; No valid clock domain found ;
+; Add1~2                                                                                                               ; No valid clock domain found ;
+; Add1~3                                                                                                               ; No valid clock domain found ;
+; Add0~2                                                                                                               ; No valid clock domain found ;
+; Add0~3                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~5     ; No valid clock domain found ;
+; Add1~4                                                                                                               ; No valid clock domain found ;
+; Add1~5                                                                                                               ; No valid clock domain found ;
+; Add0~4                                                                                                               ; No valid clock domain found ;
+; Add0~5                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~7     ; No valid clock domain found ;
+; Add1~6                                                                                                               ; No valid clock domain found ;
+; Add1~7                                                                                                               ; No valid clock domain found ;
+; Add0~6                                                                                                               ; No valid clock domain found ;
+; Add0~7                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~9     ; No valid clock domain found ;
+; Add1~8                                                                                                               ; No valid clock domain found ;
+; Add1~9                                                                                                               ; No valid clock domain found ;
+; Add0~8                                                                                                               ; No valid clock domain found ;
+; Add0~9                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~11    ; No valid clock domain found ;
+; Add1~10                                                                                                              ; No valid clock domain found ;
+; Add1~11                                                                                                              ; No valid clock domain found ;
+; Add0~10                                                                                                              ; No valid clock domain found ;
+; Add0~11                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~9     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~13    ; No valid clock domain found ;
+; Add1~12                                                                                                              ; No valid clock domain found ;
+; Add1~13                                                                                                              ; No valid clock domain found ;
+; Add0~12                                                                                                              ; No valid clock domain found ;
+; Add0~13                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~11    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~14    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~15    ; No valid clock domain found ;
+; Add1~14                                                                                                              ; No valid clock domain found ;
+; Add1~15                                                                                                              ; No valid clock domain found ;
+; Add0~14                                                                                                              ; No valid clock domain found ;
+; Add0~15                                                                                                              ; No valid clock domain found ;
+; Add1~16                                                                                                              ; No valid clock domain found ;
+; Add1~17                                                                                                              ; No valid clock domain found ;
+; Add0~16                                                                                                              ; No valid clock domain found ;
+; Add0~17                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~9     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~13    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~16    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~17    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~11    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~14    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~15    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~18    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~19    ; No valid clock domain found ;
+; Add1~18                                                                                                              ; No valid clock domain found ;
+; Add1~19                                                                                                              ; No valid clock domain found ;
+; Add0~18                                                                                                              ; No valid clock domain found ;
+; Add0~19                                                                                                              ; No valid clock domain found ;
+; Add0~20                                                                                                              ; No valid clock domain found ;
+; Add0~21                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~13    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~9     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~16    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~17    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~20    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~21    ; No valid clock domain found ;
+; Add1~20                                                                                                              ; No valid clock domain found ;
+; Add1~21                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~14    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~15    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~11    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~18    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~19    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~22    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~23    ; No valid clock domain found ;
+; Add1~22                                                                                                              ; No valid clock domain found ;
+; Add1~23                                                                                                              ; No valid clock domain found ;
+; Add0~22                                                                                                              ; No valid clock domain found ;
+; Add0~23                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~16    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~17    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~9     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~13    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~20    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~21    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~24    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~25    ; No valid clock domain found ;
+; Add1~24                                                                                                              ; No valid clock domain found ;
+; Add1~25                                                                                                              ; No valid clock domain found ;
+; Add0~24                                                                                                              ; No valid clock domain found ;
+; Add0~25                                                                                                              ; No valid clock domain found ;
+; Add0~26                                                                                                              ; No valid clock domain found ;
+; Add0~27                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~3     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~18    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~19    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~11    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~14    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~15    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~22    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~23    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~26    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~27    ; No valid clock domain found ;
+; Add1~26                                                                                                              ; No valid clock domain found ;
+; Add1~27                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~4     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~5     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~9     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~20    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~21    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~13    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~16    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~17    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~24    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~25    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~28    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~29    ; No valid clock domain found ;
+; Add1~28                                                                                                              ; No valid clock domain found ;
+; Add1~29                                                                                                              ; No valid clock domain found ;
+; Add0~28                                                                                                              ; No valid clock domain found ;
+; Add0~29                                                                                                              ; No valid clock domain found ;
+; Add1~30                                                                                                              ; No valid clock domain found ;
+; Add0~30                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~6     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~7     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~10    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~11    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~22    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~23    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~14    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~15    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_8~0     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_8~1     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~18    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~19    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~26    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~27    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~30    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~31    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_7~8     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_6~12    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_3~24    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_5~16    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_8~2     ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_4~20    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_2~28    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|op_1~32    ; No valid clock domain found ;
+; Mux57~0                                                                                                              ; No valid clock domain found ;
+; Mux15~0                                                                                                              ; No valid clock domain found ;
+; Mux15~1                                                                                                              ; No valid clock domain found ;
+; Mux15~2                                                                                                              ; No valid clock domain found ;
+; Mux15~3                                                                                                              ; No valid clock domain found ;
+; Mux15~4                                                                                                              ; No valid clock domain found ;
+; Mux49~0                                                                                                              ; No valid clock domain found ;
+; Mux15~5                                                                                                              ; No valid clock domain found ;
+; Mux15~6                                                                                                              ; No valid clock domain found ;
+; Mux15~7                                                                                                              ; No valid clock domain found ;
+; Mux15~8                                                                                                              ; No valid clock domain found ;
+; Mux15~9                                                                                                              ; No valid clock domain found ;
+; Mux15~10                                                                                                             ; No valid clock domain found ;
+; Mux15~11                                                                                                             ; No valid clock domain found ;
+; Mux15~12                                                                                                             ; No valid clock domain found ;
+; Mux14~0                                                                                                              ; No valid clock domain found ;
+; Mux14~1                                                                                                              ; No valid clock domain found ;
+; Mux14~2                                                                                                              ; No valid clock domain found ;
+; Mux14~3                                                                                                              ; No valid clock domain found ;
+; output~0                                                                                                             ; No valid clock domain found ;
+; Mux14~4                                                                                                              ; No valid clock domain found ;
+; Mux14~5                                                                                                              ; No valid clock domain found ;
+; Mux14~6                                                                                                              ; No valid clock domain found ;
+; Mux14~7                                                                                                              ; No valid clock domain found ;
+; Mux14~8                                                                                                              ; No valid clock domain found ;
+; Mux15~13                                                                                                             ; No valid clock domain found ;
+; Mux14~9                                                                                                              ; No valid clock domain found ;
+; Mux14~10                                                                                                             ; No valid clock domain found ;
+; Mux14~11                                                                                                             ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[1]~0  ; No valid clock domain found ;
+; Mux13~0                                                                                                              ; No valid clock domain found ;
+; Mux13~1                                                                                                              ; No valid clock domain found ;
+; Mux13~2                                                                                                              ; No valid clock domain found ;
+; output~1                                                                                                             ; No valid clock domain found ;
+; Mux13~3                                                                                                              ; No valid clock domain found ;
+; Mux13~4                                                                                                              ; No valid clock domain found ;
+; Mux13~5                                                                                                              ; No valid clock domain found ;
+; Mux15~14                                                                                                             ; No valid clock domain found ;
+; Mux13~6                                                                                                              ; No valid clock domain found ;
+; Mux13~7                                                                                                              ; No valid clock domain found ;
+; Mux13~8                                                                                                              ; No valid clock domain found ;
+; Mux12~0                                                                                                              ; No valid clock domain found ;
+; Mux12~1                                                                                                              ; No valid clock domain found ;
+; Mux12~2                                                                                                              ; No valid clock domain found ;
+; output~2                                                                                                             ; No valid clock domain found ;
+; Mux12~3                                                                                                              ; No valid clock domain found ;
+; Mux12~4                                                                                                              ; No valid clock domain found ;
+; Mux12~5                                                                                                              ; No valid clock domain found ;
+; Mux15~15                                                                                                             ; No valid clock domain found ;
+; Mux12~6                                                                                                              ; No valid clock domain found ;
+; Mux12~7                                                                                                              ; No valid clock domain found ;
+; Mux12~8                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[1]~1  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[2]~2  ; No valid clock domain found ;
+; Mux11~0                                                                                                              ; No valid clock domain found ;
+; Mux11~1                                                                                                              ; No valid clock domain found ;
+; Mux11~2                                                                                                              ; No valid clock domain found ;
+; output~3                                                                                                             ; No valid clock domain found ;
+; Mux11~3                                                                                                              ; No valid clock domain found ;
+; Mux11~4                                                                                                              ; No valid clock domain found ;
+; Mux11~5                                                                                                              ; No valid clock domain found ;
+; Mux15~16                                                                                                             ; No valid clock domain found ;
+; Mux11~6                                                                                                              ; No valid clock domain found ;
+; Mux11~7                                                                                                              ; No valid clock domain found ;
+; Mux11~8                                                                                                              ; No valid clock domain found ;
+; Mux10~0                                                                                                              ; No valid clock domain found ;
+; Mux10~1                                                                                                              ; No valid clock domain found ;
+; Mux10~2                                                                                                              ; No valid clock domain found ;
+; output~4                                                                                                             ; No valid clock domain found ;
+; Mux10~3                                                                                                              ; No valid clock domain found ;
+; Mux10~4                                                                                                              ; No valid clock domain found ;
+; Mux10~5                                                                                                              ; No valid clock domain found ;
+; Mux15~17                                                                                                             ; No valid clock domain found ;
+; Mux10~6                                                                                                              ; No valid clock domain found ;
+; Mux10~7                                                                                                              ; No valid clock domain found ;
+; Mux10~8                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|_~0        ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[3]~3  ; No valid clock domain found ;
+; Mux9~0                                                                                                               ; No valid clock domain found ;
+; Mux9~1                                                                                                               ; No valid clock domain found ;
+; Mux9~2                                                                                                               ; No valid clock domain found ;
+; output~5                                                                                                             ; No valid clock domain found ;
+; Mux9~3                                                                                                               ; No valid clock domain found ;
+; Mux9~4                                                                                                               ; No valid clock domain found ;
+; Mux9~5                                                                                                               ; No valid clock domain found ;
+; Mux15~18                                                                                                             ; No valid clock domain found ;
+; Mux9~6                                                                                                               ; No valid clock domain found ;
+; Mux9~7                                                                                                               ; No valid clock domain found ;
+; Mux9~8                                                                                                               ; No valid clock domain found ;
+; Mux8~0                                                                                                               ; No valid clock domain found ;
+; Mux8~1                                                                                                               ; No valid clock domain found ;
+; Mux8~2                                                                                                               ; No valid clock domain found ;
+; output~6                                                                                                             ; No valid clock domain found ;
+; Mux8~3                                                                                                               ; No valid clock domain found ;
+; Mux8~4                                                                                                               ; No valid clock domain found ;
+; Mux8~5                                                                                                               ; No valid clock domain found ;
+; Mux15~19                                                                                                             ; No valid clock domain found ;
+; Mux8~6                                                                                                               ; No valid clock domain found ;
+; Mux8~7                                                                                                               ; No valid clock domain found ;
+; Mux8~8                                                                                                               ; No valid clock domain found ;
+; Mux15~20                                                                                                             ; No valid clock domain found ;
+; Mux7~0                                                                                                               ; No valid clock domain found ;
+; Mux73~0                                                                                                              ; No valid clock domain found ;
+; Mux7~1                                                                                                               ; No valid clock domain found ;
+; Mux15~21                                                                                                             ; No valid clock domain found ;
+; Mux7~2                                                                                                               ; No valid clock domain found ;
+; Mux7~3                                                                                                               ; No valid clock domain found ;
+; Mux7~4                                                                                                               ; No valid clock domain found ;
+; Mux15~22                                                                                                             ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[3]~4  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[4]~5  ; No valid clock domain found ;
+; Mux15~23                                                                                                             ; No valid clock domain found ;
+; Mux7~5                                                                                                               ; No valid clock domain found ;
+; Mux7~6                                                                                                               ; No valid clock domain found ;
+; Mux6~0                                                                                                               ; No valid clock domain found ;
+; Mux6~1                                                                                                               ; No valid clock domain found ;
+; Mux6~2                                                                                                               ; No valid clock domain found ;
+; output~7                                                                                                             ; No valid clock domain found ;
+; Mux6~3                                                                                                               ; No valid clock domain found ;
+; Mux6~4                                                                                                               ; No valid clock domain found ;
+; Mux6~5                                                                                                               ; No valid clock domain found ;
+; Mux15~24                                                                                                             ; No valid clock domain found ;
+; Mux6~6                                                                                                               ; No valid clock domain found ;
+; Mux6~7                                                                                                               ; No valid clock domain found ;
+; Mux6~8                                                                                                               ; No valid clock domain found ;
+; Mux15~25                                                                                                             ; No valid clock domain found ;
+; Mux5~0                                                                                                               ; No valid clock domain found ;
+; Mux5~1                                                                                                               ; No valid clock domain found ;
+; Mux5~2                                                                                                               ; No valid clock domain found ;
+; output~8                                                                                                             ; No valid clock domain found ;
+; Mux5~3                                                                                                               ; No valid clock domain found ;
+; Mux5~4                                                                                                               ; No valid clock domain found ;
+; Mux5~5                                                                                                               ; No valid clock domain found ;
+; Mux5~6                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[4]~6  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[5]~7  ; No valid clock domain found ;
+; Mux5~7                                                                                                               ; No valid clock domain found ;
+; Mux5~8                                                                                                               ; No valid clock domain found ;
+; Mux5~9                                                                                                               ; No valid clock domain found ;
+; Mux5~10                                                                                                              ; No valid clock domain found ;
+; Mux4~0                                                                                                               ; No valid clock domain found ;
+; Mux4~1                                                                                                               ; No valid clock domain found ;
+; Mux4~2                                                                                                               ; No valid clock domain found ;
+; output~9                                                                                                             ; No valid clock domain found ;
+; Mux4~3                                                                                                               ; No valid clock domain found ;
+; Mux4~4                                                                                                               ; No valid clock domain found ;
+; Mux4~5                                                                                                               ; No valid clock domain found ;
+; Mux15~26                                                                                                             ; No valid clock domain found ;
+; Mux4~6                                                                                                               ; No valid clock domain found ;
+; Mux4~7                                                                                                               ; No valid clock domain found ;
+; Mux4~8                                                                                                               ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[5]~8  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[6]~9  ; No valid clock domain found ;
+; Mux3~0                                                                                                               ; No valid clock domain found ;
+; Mux3~1                                                                                                               ; No valid clock domain found ;
+; Mux3~2                                                                                                               ; No valid clock domain found ;
+; output~10                                                                                                            ; No valid clock domain found ;
+; Mux3~3                                                                                                               ; No valid clock domain found ;
+; Mux3~4                                                                                                               ; No valid clock domain found ;
+; Mux3~5                                                                                                               ; No valid clock domain found ;
+; Mux15~27                                                                                                             ; No valid clock domain found ;
+; Mux3~6                                                                                                               ; No valid clock domain found ;
+; Mux3~7                                                                                                               ; No valid clock domain found ;
+; Mux3~8                                                                                                               ; No valid clock domain found ;
+; Mux15~28                                                                                                             ; No valid clock domain found ;
+; Mux2~0                                                                                                               ; No valid clock domain found ;
+; Mux2~1                                                                                                               ; No valid clock domain found ;
+; Mux2~2                                                                                                               ; No valid clock domain found ;
+; output~11                                                                                                            ; No valid clock domain found ;
+; Mux2~3                                                                                                               ; No valid clock domain found ;
+; Mux2~4                                                                                                               ; No valid clock domain found ;
+; Mux2~5                                                                                                               ; No valid clock domain found ;
+; Mux2~6                                                                                                               ; No valid clock domain found ;
+; Mux2~7                                                                                                               ; No valid clock domain found ;
+; Mux2~8                                                                                                               ; No valid clock domain found ;
+; Mux2~9                                                                                                               ; No valid clock domain found ;
+; Mux1~0                                                                                                               ; No valid clock domain found ;
+; Mux1~1                                                                                                               ; No valid clock domain found ;
+; Mux1~2                                                                                                               ; No valid clock domain found ;
+; output~12                                                                                                            ; No valid clock domain found ;
+; Mux1~3                                                                                                               ; No valid clock domain found ;
+; Mux1~4                                                                                                               ; No valid clock domain found ;
+; Mux1~5                                                                                                               ; No valid clock domain found ;
+; Mux15~29                                                                                                             ; No valid clock domain found ;
+; Mux1~6                                                                                                               ; No valid clock domain found ;
+; Mux1~7                                                                                                               ; No valid clock domain found ;
+; Mux1~8                                                                                                               ; No valid clock domain found ;
+; Mux15~30                                                                                                             ; No valid clock domain found ;
+; Mux0~0                                                                                                               ; No valid clock domain found ;
+; Mux0~1                                                                                                               ; No valid clock domain found ;
+; Mux0~2                                                                                                               ; No valid clock domain found ;
+; Mux15~31                                                                                                             ; No valid clock domain found ;
+; Mux15~32                                                                                                             ; No valid clock domain found ;
+; Mux0~3                                                                                                               ; No valid clock domain found ;
+; Mux0~4                                                                                                               ; No valid clock domain found ;
+; Mux0~5                                                                                                               ; No valid clock domain found ;
+; Mux0~6                                                                                                               ; No valid clock domain found ;
+; Mux16~0                                                                                                              ; No valid clock domain found ;
+; Mux16~1                                                                                                              ; No valid clock domain found ;
+; Mux16~2                                                                                                              ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[1]~0  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[2]~1  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[2]~10 ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[7]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[3]~2  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[8]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[9]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[7]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[4]~3  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[10]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[0]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[8]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[11]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[9]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[7]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[5]~4  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[1]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[12]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[10]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[8]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[2]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[0]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[13]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[11]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[9]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[7]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[3]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs3a[6]~5  ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[1]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[14]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[12]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[10]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[8]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[4]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[2]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|cs2a[6]~11 ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[0]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[11]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[9]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[7]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[5]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[3]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[1]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[15]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[13]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[0]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[12]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[10]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[8]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[6]    ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[4]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[2]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[16]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[14]   ; No valid clock domain found ;
+; lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[1]   ; No valid clock domain found ;
+; output[0]                                                                                                            ; No valid clock domain found ;
+; output[1]                                                                                                            ; No valid clock domain found ;
+; output[2]                                                                                                            ; No valid clock domain found ;
+; output[3]                                                                                                            ; No valid clock domain found ;
+; output[4]                                                                                                            ; No valid clock domain found ;
+; output[5]                                                                                                            ; No valid clock domain found ;
+; output[6]                                                                                                            ; No valid clock domain found ;
+; output[7]                                                                                                            ; No valid clock domain found ;
+; output[8]                                                                                                            ; No valid clock domain found ;
+; output[9]                                                                                                            ; No valid clock domain found ;
+; output[10]                                                                                                           ; No valid clock domain found ;
+; output[11]                                                                                                           ; No valid clock domain found ;
+; output[12]                                                                                                           ; No valid clock domain found ;
+; output[13]                                                                                                           ; No valid clock domain found ;
+; output[14]                                                                                                           ; No valid clock domain found ;
+; output[15]                                                                                                           ; No valid clock domain found ;
+; overflow                                                                                                             ; No valid clock domain found ;
+; sel[3]                                                                                                               ; No valid clock domain found ;
+; sel[1]                                                                                                               ; No valid clock domain found ;
+; sel[0]                                                                                                               ; No valid clock domain found ;
+; sel[2]                                                                                                               ; No valid clock domain found ;
+; input1[8]                                                                                                            ; No valid clock domain found ;
+; input1[1]                                                                                                            ; No valid clock domain found ;
+; input1[0]                                                                                                            ; No valid clock domain found ;
+; input2[0]                                                                                                            ; No valid clock domain found ;
+; input2[1]                                                                                                            ; No valid clock domain found ;
+; input1[9]                                                                                                            ; No valid clock domain found ;
+; input1[2]                                                                                                            ; No valid clock domain found ;
+; input2[3]                                                                                                            ; No valid clock domain found ;
+; input2[2]                                                                                                            ; No valid clock domain found ;
+; input1[10]                                                                                                           ; No valid clock domain found ;
+; input1[3]                                                                                                            ; No valid clock domain found ;
+; input1[11]                                                                                                           ; No valid clock domain found ;
+; input1[4]                                                                                                            ; No valid clock domain found ;
+; input2[5]                                                                                                            ; No valid clock domain found ;
+; input2[4]                                                                                                            ; No valid clock domain found ;
+; input1[12]                                                                                                           ; No valid clock domain found ;
+; input1[5]                                                                                                            ; No valid clock domain found ;
+; input1[13]                                                                                                           ; No valid clock domain found ;
+; input1[6]                                                                                                            ; No valid clock domain found ;
+; input2[7]                                                                                                            ; No valid clock domain found ;
+; input2[6]                                                                                                            ; No valid clock domain found ;
+; input1[14]                                                                                                           ; No valid clock domain found ;
+; input1[7]                                                                                                            ; No valid clock domain found ;
+; input1[15]                                                                                                           ; No valid clock domain found ;
+; input2[8]                                                                                                            ; No valid clock domain found ;
+; input2[9]                                                                                                            ; No valid clock domain found ;
+; input2[10]                                                                                                           ; No valid clock domain found ;
+; input2[11]                                                                                                           ; No valid clock domain found ;
+; input2[13]                                                                                                           ; No valid clock domain found ;
+; input2[12]                                                                                                           ; No valid clock domain found ;
+; input2[14]                                                                                                           ; No valid clock domain found ;
+; input2[15]                                                                                                           ; No valid clock domain found ;
++----------------------------------------------------------------------------------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; Operating Conditions Used                                            ;
++-----------------------------------------+----------------------------+
+; Setting                                 ; Value                      ;
++-----------------------------------------+----------------------------+
+; Device power characteristics            ; Typical                    ;
+;                                         ;                            ;
+; Voltages                                ;                            ;
+;     VCCINT                              ; 1.20 V                     ;
+;     VCCA                                ; 2.50 V                     ;
+;     VCCD_PLL                            ; 1.20 V                     ;
+;     VCC_CLKIN                           ; 2.50 V                     ;
+;     VCCA_GXB                            ; 0.00 V                     ;
+;     VCCH_GXB                            ; 2.50 V                     ;
+;     VCCL_GXB                            ; 0.00 V                     ;
+;     2.5 V I/O Standard                  ; 2.5 V                      ;
+;                                         ;                            ;
+; Auto computed junction temperature      ; 27.1 degrees Celsius       ;
+;     Ambient temperature                 ; 25.0 degrees Celsius       ;
+;     Junction-to-Case thermal resistance ; 7.70 degrees Celsius/Watt  ;
+;     Case-to-Ambient thermal resistance  ; 23.50 degrees Celsius/Watt ;
+;                                         ;                            ;
+; Board model used                        ; Typical                    ;
++-----------------------------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                   ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; I/O        ; 2.36 mW                           ; 0.00 mW                     ; 2.36 mW                        ; 0.00 mW                       ;    0.000                                                  ;
++------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                             ;
++-----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                    ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                               ;
++-----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+; |alu_ns                                       ; 2.36 mW (2.36 mW)                    ; 0.00 mW (0.00 mW)               ; 2.36 mW (2.36 mW)                 ; 0.00 mW (0.00 mW)                 ; |alu_ns                                                                                                           ;
+;     |hard_block:auto_generated_inst           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|hard_block:auto_generated_inst                                                                            ;
+;     |lpm_mult:Mult0                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0                                                                                            ;
+;         |mult_1ht:auto_generated              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated                                                                    ;
+;             |alt_mac_mult:mac_mult1           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1                                             ;
+;                 |mac_mult_r2h1:auto_generated ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated                ;
+;                     |mult_jul:mult1           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1 ;
+;             |alt_mac_out:mac_out2             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2                                               ;
++-----------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 8.10 mA                 ; 0.00 mA                   ; 8.10 mA                  ; 8.10 mA                          ;
+; VCCIO          ; 2.28 mA                 ; 0.00 mA                   ; 2.28 mA                  ; 2.28 mA                          ;
+; VCCA           ; 19.14 mA                ; 0.00 mA                   ; 19.14 mA                 ; 19.14 mA                         ;
+; VCCD_PLL       ; 2.88 mA                 ; 0.00 mA                   ; 2.88 mA                  ; 2.88 mA                          ;
+; VCC_CLKIN      ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCA_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCH_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCL_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; QL0      ; --            ; --                  ; --                    ; --                   ;
+; 3        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
+; 3A       ; --            ; --                  ; --                    ; --                   ;
+; 4        ; 2.5V          ; 0.33 mA             ; 0.00 mA               ; 0.33 mA              ;
+; 5        ; 2.5V          ; 0.33 mA             ; 0.00 mA               ; 0.33 mA              ;
+; 6        ; 2.5V          ; 0.33 mA             ; 0.00 mA               ; 0.33 mA              ;
+; 7        ; 2.5V          ; 0.33 mA             ; 0.00 mA               ; 0.33 mA              ;
+; 8A       ; --            ; --                  ; --                    ; --                   ;
+; 8        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
+; 9        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 2.28 mA                 ; 0.00 mA                   ; 2.28 mA                  ; 2.28 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                        ;
++----------------------------------------------------------------------------------------+--------------+-------------+------------+---------------+
+; Data Source                                                                            ; Total        ; Pin         ; Registered ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+-------------+------------+---------------+
+; Simulation (from file)                                                                 ;              ;             ;            ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;            ;               ;
+; Node, entity or clock assignment                                                       ;              ;             ;            ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;            ;               ;
+; Vectorless estimation                                                                  ;              ;             ;            ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;            ;               ;
+; Default assignment                                                                     ;              ;             ;            ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (100.0%) ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 615 (100.0%) ; 58 (100.0%) ; 0 (100.0%) ; 557 (100.0%)  ;
+;                                                                                        ;              ;             ;            ;               ;
+; Assumed 0                                                                              ;              ;             ;            ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 615 (100.0%) ; 58 (100.0%) ; 0 (100.0%) ; 557 (100.0%)  ;
++----------------------------------------------------------------------------------------+--------------+-------------+------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat Sep 23 22:35:49 2023
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off lab3_p2 -c lab3_p2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab3_p2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 66.63 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4938 megabytes
+    Info: Processing ended: Sat Sep 23 22:35:51 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,29 @@
+
+
+entity upcount is
+port
+(
+clock, resetn,E : in std_logic;
+q : out std_logic_vector(3 downto 0)
+);
+end upcount;
+--process BLOCK is concurrent
+--whats INSIDE the process block is sequential
+
+architecture behavior of upcount is
+signal count :std_logic_vector(3 downto 0);
+begin
+process(clock,resetn)
+begin
+if resetn = '0' then
+	count <= "0000";
+elsif(clock'EVENT AND clock ='1') then
+	if E = '1' then
+	count <= count+1;
+	else
+	count <= count;
+	end if;
+end if;
+end process;
+Q<=count;
+end behavior;
