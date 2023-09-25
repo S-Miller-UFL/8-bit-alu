@@ -1,4 +1,6 @@
 --ALU_NS
+--Steven Miller
+--Section number: 11710
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -85,7 +87,7 @@ case sel is
  output <=  std_logic_vector(shift_right(unsigned(input1),1));
  
  when "1010" =>
- output<= std_logic_vector(rotate_left(unsigned(input1),WIDTH));
+ output<= std_logic_vector(rotate_right(unsigned(input1),WIDTH/2));
  overflow <= '0';
  
  when "1011" =>

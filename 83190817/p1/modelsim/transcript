@@ -1,6 +1,9 @@
+# Compile of lab3_p1.vho was successful.
+# Compile of adder_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
 vsim -gui work.adder_tb
 # vsim -gui work.adder_tb 
-# Start time: 12:05:41 on Sep 25,2023
+# Start time: 14:50:12 on Sep 25,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -24,5 +27,5 @@ add wave -position end  sim:/adder_tb/carry_out
 run -all
 # ** Note: SIMULATION FINISHED!
 #    Time: 5242880 ns  Iteration: 0  Instance: /adder_tb
-# End time: 12:06:42 on Sep 25,2023, Elapsed time: 0:01:01
-# Errors: 0, Warnings: 1
+# End time: 14:50:27 on Sep 25,2023, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 3

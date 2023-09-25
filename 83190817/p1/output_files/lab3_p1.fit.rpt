@@ -1,5 +1,5 @@
 Fitter report for lab3_p1
-Fri Sep 22 16:36:25 2023
+Mon Sep 25 14:47:56 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 22 16:36:25 2023       ;
+; Fitter Status                      ; Successful - Mon Sep 25 14:47:56 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab3_p1                                     ;
 ; Top-level Entity Name              ; adder8numeric                               ;
@@ -156,12 +156,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.3%      ;
+;     Processors 2-8         ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -1037,13 +1037,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/output_files/lab3_p1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5868 megabytes
-    Info: Processing ended: Fri Sep 22 16:36:26 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 5867 megabytes
+    Info: Processing ended: Mon Sep 25 14:47:56 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+

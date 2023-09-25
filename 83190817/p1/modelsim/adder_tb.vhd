@@ -1,6 +1,7 @@
 -- Greg Stitt
 -- University of Florida
-
+--Steven Miller
+--Section number: 11710
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

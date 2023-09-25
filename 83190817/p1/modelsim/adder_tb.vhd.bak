@@ -15,7 +15,7 @@ architecture TB of adder_tb is
 
 begin  -- TB
 
-  UUT : entity work.eightbitadder
+  UUT : entity work.adder8numeric
     port map (
       input1    => input1,
       input2    => input2,

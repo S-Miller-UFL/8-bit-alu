@@ -11,7 +11,8 @@
 -- button(1) is the top button
 -- led5 is the leftmost 7-segment LED
 -- ledx_dp is the decimal point on the 7-segment LED for LED x
-
+--Steven Miller
+--Section number: 11710
 library ieee;
 use ieee.std_logic_1164.all;
 

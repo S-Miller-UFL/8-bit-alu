@@ -1,18 +1,4 @@
-C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package VITAL_Timing
--- Loading package VITAL_Primitives
--- Loading package cycloneiv_atom_pack
--- Loading package cycloneiv_components
--- Compiling entity hard_block
--- Compiling architecture structure of hard_block
--- Compiling entity adder8numeric
--- Compiling architecture structure of adder8numeric
-
-} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd
+C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -25,5 +11,19 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package cycloneiv_atom_pack
 -- Loading package cycloneiv_components
 -- Loading entity adder8numeric
+
+} {} {}} C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho {1 {vcom -work work -2002 -explicit -stats=none C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package cycloneiv_atom_pack
+-- Loading package cycloneiv_components
+-- Compiling entity hard_block
+-- Compiling architecture structure of hard_block
+-- Compiling entity adder8numeric
+-- Compiling architecture structure of adder8numeric
 
 } {} {}}

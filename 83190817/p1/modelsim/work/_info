@@ -10,14 +10,14 @@ z2
 cModel Technology
 dC:/Users/steve/git_repos/school/EEL4712/lab2/p4/modelsim
 Eadder8numeric
-Z0 w1695414992
+Z0 w1695667682
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ]lnLY_M[kb3fWjbKaDc;_1
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z6 DPx9 cycloneiv 20 cycloneiv_components 0 22 J>QEYeEXjZb^Cnb3?e1D40
-!i122 0
+!i122 2
 Z7 dC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim
 Z8 8C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho
 Z9 FC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho
@@ -27,9 +27,9 @@ VX3^iNT24z^4F8IKn9NTkS0
 !s100 IQOk@OcDc7hmmn;D0?41G2
 Z10 OV;C;2020.1;71
 32
-Z11 !s110 1695415188
+Z11 !s110 1695667803
 !i10b 1
-Z12 !s108 1695415188.000000
+Z12 !s108 1695667803.000000
 Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho|
 Z14 !s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/lab3_p1.vho|
 !i113 1
@@ -43,7 +43,7 @@ R4
 R5
 R6
 Z17 DEx4 work 13 adder8numeric 0 22 X3^iNT24z^4F8IKn9NTkS0
-!i122 0
+!i122 2
 l184
 L117 578
 V5W5QUflL7PUS=Zlb[D9gU3
@@ -59,25 +59,25 @@ R14
 R15
 R16
 Eadder_tb
-Z18 w1695415186
+Z18 w1695667799
 Z19 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R4
 R5
-!i122 1
+!i122 3
 R7
 Z20 8C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd
 Z21 FC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd
 l0
-L8 1
-VlNzV;BRTo_:<@RIU:K?>L1
-!s100 PDNPhQNIQ4JdmiNVWd5YI3
+L9 1
+VPOmQSf>BZ`W5g8Q[N>UgR3
+!s100 G;aVEb<<^ZK0E:24oVXnP2
 R10
 32
 R11
 !i10b 1
 R12
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd|
-!s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd|
+Z23 !s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd|
 !i113 1
 R15
 R16
@@ -90,19 +90,19 @@ R17
 R19
 R4
 R5
-DEx4 work 8 adder_tb 0 22 lNzV;BRTo_:<@RIU:K?>L1
-!i122 1
-l16
-L11 67
-V5cNBQ9L9S2n?ZCoB9J:`>1
-!s100 oSjU6Yo[UORR2NWNPdQT<1
+DEx4 work 8 adder_tb 0 22 POmQSf>BZ`W5g8Q[N>UgR3
+!i122 3
+l17
+L12 67
+V`S_:G4Si``=^WJAD6b;ZR3
+!s100 :MznW@d8e0`7>R8:zXIYa3
 R10
 32
 R11
 !i10b 1
 R12
 R22
-Z23 !s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim/adder_tb.vhd|
+R23
 !i113 1
 R15
 R16
@@ -114,7 +114,7 @@ R3
 R4
 R5
 R6
-!i122 0
+!i122 2
 R7
 R8
 R9
@@ -140,7 +140,7 @@ R4
 R5
 R6
 DEx4 work 10 hard_block 0 22 A@mL2FA]aXV3INlRb<>JX2
-!i122 0
+!i122 2
 l65
 L51 20
 VS7OM9gUdhgl=YK;Tn9FDz2
