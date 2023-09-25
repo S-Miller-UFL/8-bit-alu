@@ -1,98 +1,6 @@
-# Compile of alu_ns.vhd was successful.
-# Compile of alu_ns_tb.vhd was successful.
-# Compile of lab3_p2.vho was successful.
-# 3 compiles, 0 failed with no errors.
 vsim -gui work.alu_ns_tb
 # vsim -gui work.alu_ns_tb 
-# Start time: 10:25:05 on Sep 25,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading work.alu_ns_tb(tb)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cycloneiv.cycloneiv_atom_pack(body)
-# Loading cycloneiv.cycloneiv_components
-# Loading work.alu_ns(structure)
-# ** Warning: (vsim-8713) Suspect default binding for component instance 'UUT'.
-# Entity has no generics at all; the component has generic:
-#           WIDTH
-#    Time: 0 ps  Iteration: 0  Instance: /alu_ns_tb/UUT File: C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd Line: 44
-# Loading work.hard_block(structure)
-# Loading cycloneiv.cycloneiv_io_obuf(arch)
-# Loading cycloneiv.cycloneiv_io_ibuf(arch)
-# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 45541 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-add wave -position end  sim:/alu_ns_tb/input1
-add wave -position end  sim:/alu_ns_tb/input2
-add wave -position end  sim:/alu_ns_tb/sel
-add wave -position end  sim:/alu_ns_tb/output
-add wave -position end  sim:/alu_ns_tb/overflow
-run -all
-# ** Warning: Error : not 10101010 =65365 instead of 01010101
-#    Time: 50 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Warning: Error : 00000000 nor 10101010 = 65365 instead of 0101010101010101
-#    Time: 100 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Warning: Error: incorrect carry for addition with overflow test. Carry is equal to '0'instead of 1
-#    Time: 350 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Warning: Error : 1111111100000000 rotated right = 61440 instead of 0000000011111111
-#    Time: 650 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Warning: Error : 1111111100000000 swapped = 61440 instead of 0000000011111111
-#    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Note: simulation finished!
-#    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-# Compile of alu_ns.vhd was successful.
-# Compile of alu_ns_tb.vhd was successful.
-# Compile of lab3_p2.vho was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alu_ns_tb(tb)
-# Loading work.alu_ns(structure)
-# ** Warning: (vsim-8713) Suspect default binding for component instance 'UUT'.
-# Entity has no generics at all; the component has generic:
-#           WIDTH
-#    Time: 0 ps  Iteration: 0  Instance: /alu_ns_tb/UUT File: C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd Line: 44
-# Loading work.hard_block(structure)
-# ** Warning: Design size of 45543 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-run -all
-# ** Warning: Error: incorrect carry for addition with overflow test. Carry is equal to '0'instead of 1
-#    Time: 350 ns  Iteration: 0  Instance: /alu_ns_tb
-# ** Note: simulation finished!
-#    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-# Compile of alu_ns.vhd was successful.
-# Compile of alu_ns_tb.vhd was successful.
-# Compile of lab3_p2.vho was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alu_ns_tb(tb)
-# Loading work.alu_ns(structure)
-# ** Warning: (vsim-8713) Suspect default binding for component instance 'UUT'.
-# Entity has no generics at all; the component has generic:
-#           WIDTH
-#    Time: 0 ps  Iteration: 0  Instance: /alu_ns_tb/UUT File: C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd Line: 44
-# Loading work.hard_block(structure)
-# ** Warning: Design size of 45543 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-run -all
-# ** Note: simulation finished!
-#    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-quit -sim
-# End time: 10:46:57 on Sep 25,2023, Elapsed time: 0:21:52
-# Errors: 0, Warnings: 3
-# Compile of alu_ns.vhd was successful.
-# Compile of alu_ns_tb.vhd was successful.
-# Compile of lab3_p2.vho was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui work.alu_ns_tb
-# vsim -gui work.alu_ns_tb 
-# Start time: 10:47:23 on Sep 25,2023
+# Start time: 12:03:41 on Sep 25,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -123,23 +31,6 @@ add wave -position end  sim:/alu_ns_tb/overflow
 run -all
 # ** Note: simulation finished!
 #    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-# Compile of alu_ns.vhd was successful.
-# Compile of alu_ns_tb.vhd was successful.
-# Compile of lab3_p2.vho was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.alu_ns_tb(tb)
-# Loading work.alu_ns(structure)
-# ** Warning: (vsim-8713) Suspect default binding for component instance 'UUT'.
-# Entity has no generics at all; the component has generic:
-#           WIDTH
-#    Time: 0 ps  Iteration: 0  Instance: /alu_ns_tb/UUT File: C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd Line: 44
-# Loading work.hard_block(structure)
-# ** Warning: Design size of 45543 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-run -all
-# ** Note: simulation finished!
-#    Time: 700 ns  Iteration: 0  Instance: /alu_ns_tb
-# End time: 11:56:23 on Sep 25,2023, Elapsed time: 1:09:00
+# End time: 12:05:32 on Sep 25,2023, Elapsed time: 0:01:51
 # Errors: 0, Warnings: 3
+# Closing project C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/lab3_p2.mpf

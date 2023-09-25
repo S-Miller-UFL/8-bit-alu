@@ -1,3 +1,28 @@
-# Compile of lab3_p2.vho was successful.
-# Compile of alu_ns_tb.vhd failed with 5 errors.
-# 2 compiles, 1 failed with 5 errors.
+vsim -gui work.adder_tb
+# vsim -gui work.adder_tb 
+# Start time: 12:05:41 on Sep 25,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.adder_tb(tb)
+# Loading work.adder8numeric(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+add wave -position end  sim:/adder_tb/input1
+add wave -position end  sim:/adder_tb/input2
+add wave -position end  sim:/adder_tb/sum
+add wave -position end  sim:/adder_tb/carry_in
+add wave -position end  sim:/adder_tb/carry_out
+run -all
+# ** Note: SIMULATION FINISHED!
+#    Time: 5242880 ns  Iteration: 0  Instance: /adder_tb
+# End time: 12:06:42 on Sep 25,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 1
