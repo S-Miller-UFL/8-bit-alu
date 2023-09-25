@@ -10,28 +10,28 @@ z2
 cModel Technology
 dC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p1/modelsim
 Ealu_ns
-Z0 w1695517406
+Z0 w1695652269
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ]lnLY_M[kb3fWjbKaDc;_1
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z6 DPx9 cycloneiv 20 cycloneiv_components 0 22 J>QEYeEXjZb^Cnb3?e1D40
-!i122 182
-Z7 dC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim
-Z8 8C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/lab3_p2.vho
-Z9 FC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/lab3_p2.vho
+!i122 222
+Z7 dC:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim
+Z8 8C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/lab3_p2.vho
+Z9 FC:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/lab3_p2.vho
 l0
 L78 1
 V?SF9z5IHelT2Lf8FPej1?3
 !s100 [=BA]8INP_zW9QBS=?J<W0
 Z10 OV;C;2020.1;71
 32
-Z11 !s110 1695517744
+Z11 !s110 1695653710
 !i10b 1
-Z12 !s108 1695517744.000000
-Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/lab3_p2.vho|
-Z14 !s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/lab3_p2.vho|
+Z12 !s108 1695653709.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/lab3_p2.vho|
+Z14 !s107 C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/lab3_p2.vho|
 !i113 1
 Z15 o-work work -2002 -explicit
 Z16 tExplicit 1 CvgOpt 0
@@ -43,14 +43,14 @@ R4
 R5
 R6
 Z17 DEx4 work 6 alu_ns 0 22 ?SF9z5IHelT2Lf8FPej1?3
-!i122 182
-l649
-Z18 L144 8330
-Z19 V_18gf>Y:a<9Y=_mbFeg302
-Z20 !s100 NE7EBeRf0889Zd9QobmKY0
+!i122 222
+l643
+Z18 L144 8216
+Z19 V[b=^b7LXFDaa?Uzckbf5O0
+Z20 !s100 b;E@N2b`O?F[2NBZcUdOl2
 R10
 32
-!s110 1695517745
+R11
 !i10b 1
 R12
 R13
@@ -63,68 +63,68 @@ Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R4
 R5
 DEx4 work 6 alu_ns 0 22 KK7c:DHmmj:5l[B30ZDkn3
-!i122 181
+!i122 220
 l27
-L17 92
-V?g_B6]>FT:L8hV;W`eSHo0
-!s100 o7_LPCjC^fcEZjh<iUJ]F2
+L17 97
+V`=7bR8hYBHSRoO0LGK6SJ1
+!s100 `M@c69U`FRX8<ciWh>k4h3
 R10
 32
-R11
+Z22 !s110 1695653709
 !i10b 1
 R12
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns.vhd|
-!s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns.vhd|
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns.vhd|
+!s107 C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns.vhd|
 !i113 1
 R15
 R16
-FC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns.vhd
-w1695506891
-8C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns.vhd
+FC:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns.vhd
+w1695609834
+8C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns.vhd
 Ealu_ns_tb
-Z22 w1695517742
+Z23 w1695653707
 R21
-Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z24 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z24 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z25 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R4
 R5
-!i122 180
+!i122 221
 R7
-Z25 8C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd
-Z26 FC:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd
+Z26 8C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd
+Z27 FC:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd
 l0
 L8 1
 V=5Y:`DkJ6^@[cj28bP;BG0
 !s100 D5JSz^:V7jDoXAhLnVX6>1
 R10
 32
-R11
+R22
 !i10b 1
 R12
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd|
-Z28 !s107 C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd|
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd|
+Z29 !s107 C:/Users/steve/source/eel4712/lab3/83190817/p2/modelsim/alu_ns_tb.vhd|
 !i113 1
 R15
 R16
 Atb
 R21
-R23
 R24
+R25
 R4
 R5
 DEx4 work 9 alu_ns_tb 0 22 =5Y:`DkJ6^@[cj28bP;BG0
-!i122 180
+!i122 221
 l35
 L11 156
-VSzgRO=EcoO@7oo[D;kTDW2
-!s100 0lFPo99CEB3>0PadFkUoS3
+Vf_1hM=DQZHReCKzM_Vh_Z2
+!s100 BDa8?2_<>;KMMAzk]?QDY3
 R10
 32
-R11
+R22
 !i10b 1
 R12
-R27
 R28
+R29
 !i113 1
 R15
 R16
@@ -136,7 +136,7 @@ R3
 R4
 R5
 R6
-!i122 182
+!i122 222
 R7
 R8
 R9
@@ -161,12 +161,12 @@ R3
 R4
 R5
 R6
-Z29 DEx4 work 10 hard_block 0 22 A@mL2FA]aXV3INlRb<>JX2
-!i122 182
+Z30 DEx4 work 10 hard_block 0 22 A@mL2FA]aXV3INlRb<>JX2
+!i122 222
 l65
-Z30 L51 20
-Z31 VS7OM9gUdhgl=YK;Tn9FDz2
-Z32 !s100 O>:lWQfHCcIaXgQ<=Tgn10
+Z31 L51 20
+Z32 VS7OM9gUdhgl=YK;Tn9FDz2
+Z33 !s100 O>:lWQfHCcIaXgQ<=Tgn10
 R10
 32
 R11

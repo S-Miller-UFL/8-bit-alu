@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3_p2
-Sat Sep 23 21:03:14 2023
+Mon Sep 25 10:30:57 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -49,13 +49,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 23 21:03:14 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 25 10:30:57 2023       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab3_p2                                     ;
 ; Top-level Entity Name              ; alu_ns                                      ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 401                                         ;
-;     Total combinational functions  ; 401                                         ;
+; Total logic elements               ; 394                                         ;
+;     Total combinational functions  ; 394                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 53                                          ;
@@ -161,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -172,27 +172,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; alu_ns.vhd                       ; yes             ; User VHDL File               ; C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd           ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf           ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc         ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc        ;         ;
-; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc           ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc           ;         ;
-; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc           ;         ;
-; db/mult_1ht.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf      ;         ;
-; alt_mac_mult.tdf                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_mac_mult.tdf       ;         ;
-; lpm_mult.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.inc           ;         ;
-; db/mac_mult_r2h1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mac_mult_r2h1.tdf ;         ;
-; db/mult_jul.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf      ;         ;
-; alt_mac_out.tdf                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_mac_out.tdf        ;         ;
-; alt_zaccum.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_zaccum.inc         ;         ;
-; db/mac_out_kv82.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mac_out_kv82.tdf  ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; alu_ns.vhd                       ; yes             ; User VHDL File               ; C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd               ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf     ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc   ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc  ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc     ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc     ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc     ;         ;
+; db/mult_1ht.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf          ;         ;
+; alt_mac_mult.tdf                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_mac_mult.tdf ;         ;
+; lpm_mult.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.inc     ;         ;
+; db/mac_mult_r2h1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mac_mult_r2h1.tdf     ;         ;
+; db/mult_jul.tdf                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf          ;         ;
+; alt_mac_out.tdf                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_mac_out.tdf  ;         ;
+; alt_zaccum.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_zaccum.inc   ;         ;
+; db/mac_out_kv82.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mac_out_kv82.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -205,8 +205,8 @@ https://fpgasoftware.intel.com/eula.
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
 ; Maximum fan-out node     ; sel[2]~input     ;
-; Maximum fan-out          ; 71               ;
-; Total fan-out            ; 1421             ;
+; Maximum fan-out          ; 85               ;
+; Total fan-out            ; 1401             ;
 ; Average fan-out          ; 2.80             ;
 +--------------------------+------------------+
 
@@ -216,7 +216,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Entity Name   ; Library Name ;
 +--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+---------------+--------------+
-; |alu_ns                                    ; 401 (221)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 53   ; 0            ; |alu_ns                                                                                                           ; alu_ns        ; work         ;
+; |alu_ns                                    ; 394 (214)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 53   ; 0            ; |alu_ns                                                                                                           ; alu_ns        ; work         ;
 ;    |lpm_mult:Mult0|                        ; 180 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |alu_ns|lpm_mult:Mult0                                                                                            ; lpm_mult      ; work         ;
 ;       |mult_1ht:auto_generated|            ; 180 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated                                                                    ; mult_1ht      ; work         ;
 ;          |alt_mac_mult:mac_mult1|          ; 180 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |alu_ns|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1                                             ; alt_mac_mult  ; work         ;
@@ -246,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 16:1               ; 13 bits   ; 130 LEs       ; 104 LEs              ; 26 LEs                 ; No         ; |alu_ns|Mux14              ;
+; 16:1               ; 14 bits   ; 140 LEs       ; 112 LEs              ; 28 LEs                 ; No         ; |alu_ns|Mux14              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -470,17 +470,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 53                          ;
-; cycloneiii_lcell_comb ; 401                         ;
-;     arith             ; 101                         ;
+; cycloneiii_lcell_comb ; 394                         ;
+;     arith             ; 102                         ;
 ;         2 data inputs ; 7                           ;
-;         3 data inputs ; 94                          ;
-;     normal            ; 300                         ;
-;         2 data inputs ; 47                          ;
-;         3 data inputs ; 51                          ;
+;         3 data inputs ; 95                          ;
+;     normal            ; 292                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 43                          ;
+;         3 data inputs ; 46                          ;
 ;         4 data inputs ; 202                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.20                       ;
-; Average LUT depth     ; 7.76                        ;
+; Average LUT depth     ; 7.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -499,31 +500,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Sep 23 21:03:03 2023
+    Info: Processing started: Mon Sep 25 10:30:45 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3_p2 -c lab3_p2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file alu_ns.vhd
-    Info (12022): Found design unit 1: alu_ns-behave File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 17
-    Info (12023): Found entity 1: alu_ns File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 5
+    Info (12022): Found design unit 1: alu_ns-behave File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 17
+    Info (12023): Found entity 1: alu_ns File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 5
 Info (12127): Elaborating entity "alu_ns" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(65): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 65
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(65): signal "tempin2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 65
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(66): signal "tempsum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(67): signal "tempsum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 67
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(74): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(74): signal "tempin2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(75): signal "tempmult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 75
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(76): signal "tempmult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 76
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(79): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 79
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(80): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 80
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(96): signal "tempswaplower" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 96
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(96): signal "tempswapupper" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 96
-Warning (10492): VHDL Process Statement warning at alu_ns.vhd(102): signal "tempswap" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 102
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(65): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(65): signal "tempin2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(66): signal "tempsum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(67): signal "tempsum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(74): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(74): signal "tempin2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(75): signal "tempmult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(76): signal "tempmult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(79): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(80): signal "tempin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 80
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(96): signal "tempswaplower" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(96): signal "tempswapupper" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at alu_ns.vhd(102): signal "tempswap" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 102
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 74
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 74
-Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/alu_ns.vhd Line: 74
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 74
+Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following parameter: File: C:/Users/steve/source/eel4712/lab3/83190817/p2/alu_ns.vhd Line: 74
     Info (12134): Parameter "LPM_WIDTHA" = "16"
     Info (12134): Parameter "LPM_WIDTHB" = "16"
     Info (12134): Parameter "LPM_WIDTHP" = "32"
@@ -534,17 +535,17 @@ Info (12133): Instantiated megafunction "lpm_mult:Mult0" with the following para
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1ht.tdf
-    Info (12023): Found entity 1: mult_1ht File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 29
+    Info (12023): Found entity 1: mult_1ht File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 29
 Info (270001): Converted 1 DSP block slices
     Info (270002): Used 1 DSP blocks before DSP block balancing
         Info (270003): Used 1 DSP block slices in "Simple Multiplier (18-bit)" mode implemented in approximately 1 DSP blocks
     Info (270013): Converted the following 1 DSP block slices to logic elements
-        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_out2" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
-            Info (270004): DSP block output node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_out2" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
-            Info (270005): DSP block multiplier node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_mult1" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
+        Info (270006): DSP block slice in "Simple Multiplier (18-bit)" mode with output node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_out2" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
+            Info (270004): DSP block output node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_out2" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
+            Info (270005): DSP block multiplier node "lpm_mult:Mult0|mult_1ht:auto_generated|mac_mult1" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
     Info (270002): Used 0 DSP blocks after DSP block balancing
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
-Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" with the following parameter: File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
+Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" with the following parameter: File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 36
     Info (12134): Parameter "MULT_REPRESENTATION_A" = "UNSIGNED"
     Info (12134): Parameter "MULT_REPRESENTATION_B" = "UNSIGNED"
     Info (12134): Parameter "MULT_PIPELINE" = "0"
@@ -566,11 +567,11 @@ Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|
     Info (12134): Parameter "signb_clear" = "NONE"
     Info (12134): Parameter "output_clear" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mac_mult_r2h1.tdf
-    Info (12023): Found entity 1: mac_mult_r2h1 File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mac_mult_r2h1.tdf Line: 25
+    Info (12023): Found entity 1: mac_mult_r2h1 File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mac_mult_r2h1.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_jul.tdf
-    Info (12023): Found entity 1: mult_jul File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 29
-Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
-Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" with the following parameter: File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
+    Info (12023): Found entity 1: mult_jul File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 29
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
+Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" with the following parameter: File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_1ht.tdf Line: 45
     Info (12134): Parameter "OPERATION_MODE" = "OUTPUT_ONLY"
     Info (12134): Parameter "dataa_width" = "32"
     Info (12134): Parameter "datab_width" = "0"
@@ -604,106 +605,106 @@ Info (12133): Instantiated megafunction "lpm_mult:Mult0|mult_1ht:auto_generated|
     Info (12134): Parameter "addnsub1_pipeline_clear" = "NONE"
     Info (12134): Parameter "zeroacc_pipeline_clear" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mac_out_kv82.tdf
-    Info (12023): Found entity 1: mac_out_kv82 File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mac_out_kv82.tdf Line: 23
+    Info (12023): Found entity 1: mac_out_kv82 File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mac_out_kv82.tdf Line: 23
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[10]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[9]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[10]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[9]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[10]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[9]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[8]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[7]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[6]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[5]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[10]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[9]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[8]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[7]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[6]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[5]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[4]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[3]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[8]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[7]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[6]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[5]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[4]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[3]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[2]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 50
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[10]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[9]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[12]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[11]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[10]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[9]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[8]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[7]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[10]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[9]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[8]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[7]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[6]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le10a[5]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 47
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[10]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[9]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[8]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[7]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[6]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[5]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[4]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le11a[3]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 48
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[8]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[7]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[6]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[5]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[4]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[3]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le12a[2]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 49
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le4a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 50
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le7a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 53
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[10]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le8a[9]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 54
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[12]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[11]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[10]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[9]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[8]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le9a[7]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 55
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following LCELL buffer node(s):
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[17]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[16]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[15]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[14]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
-        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[13]" File: C:/Users/steve/git_repos/school/EEL4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[17]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[16]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le5a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 51
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[15]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[14]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1|mac_mult_r2h1:auto_generated|mult_jul:mult1|le6a[13]" File: C:/Users/steve/source/eel4712/lab3/83190817/p2/db/mult_jul.tdf Line: 52
 Info (13014): Ignored 246 buffer(s)
     Info (13016): Ignored 16 CARRY_SUM buffer(s)
     Info (13019): Ignored 230 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 454 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 447 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 36 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 401 logic cells
+    Info (21061): Implemented 394 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Sat Sep 23 21:03:14 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Mon Sep 25 10:30:57 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:24
 
 

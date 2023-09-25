@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Sep 23 21:03:19 2023
+Fitter Status : Successful - Mon Sep 25 10:31:02 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : lab3_p2
 Top-level Entity Name : alu_ns
 Family : Cyclone IV GX
 Device : EP4CGX15BF14A7
 Timing Models : Final
-Total logic elements : 401 / 14,400 ( 3 % )
-    Total combinational functions : 401 / 14,400 ( 3 % )
+Total logic elements : 394 / 14,400 ( 3 % )
+    Total combinational functions : 394 / 14,400 ( 3 % )
     Dedicated logic registers : 0 / 14,400 ( 0 % )
 Total registers : 0
 Total pins : 53 / 81 ( 65 % )

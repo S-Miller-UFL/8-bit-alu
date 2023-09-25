@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Sep 23 21:03:14 2023
+Analysis & Synthesis Status : Successful - Mon Sep 25 10:30:57 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : lab3_p2
 Top-level Entity Name : alu_ns
 Family : Cyclone IV GX
-Total logic elements : 401
-    Total combinational functions : 401
+Total logic elements : 394
+    Total combinational functions : 394
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 53

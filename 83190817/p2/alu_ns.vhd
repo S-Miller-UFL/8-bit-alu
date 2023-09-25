@@ -23,7 +23,7 @@ signal tempmult : unsigned(((WIDTH*2)-1) downto 0);
 signal tempswap: unsigned(WIDTH-1 downto 0);
 signal tempswapupper: unsigned(((WIDTH/2)-1) downto 0);
 signal tempswaplower: unsigned(((WIDTH/2)-1) downto 0);
-+
+
 begin
 
 process (sel, input1, input2)
@@ -64,7 +64,7 @@ case sel is
  when "0101" =>
  tempsum <= ('0' & tempin1) + ('0' & tempin2);
  output <= std_logic_vector(tempsum(WIDTH-1 downto 0));
- overflow <= tempsum(8);
+ overflow <= tempsum(width);
  
  when "0110" =>
  output<=std_logic_vector(unsigned(input1) - unsigned(input2));
@@ -85,7 +85,7 @@ case sel is
  output <=  std_logic_vector(shift_right(unsigned(input1),1));
  
  when "1010" =>
- output<= std_logic_vector(rotate_left(unsigned(input1),WIDTH));
+ output<= std_logic_vector(rotate_right(unsigned(input1),WIDTH/2));
  overflow <= '0';
  
  when "1011" =>
