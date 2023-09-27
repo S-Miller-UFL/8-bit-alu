@@ -69,7 +69,7 @@ begin  -- TB
         input1 <= conv_std_logic_vector(255, input1'length);
         input2 <= conv_std_logic_vector(170, input2'length);
         wait for 50 ns;
-        assert(output = (conv_std_logic_vector(255, input1'length) xor conv_std_logic_vector(170, input2'length))) report "Error : 11111111 xor 10101010 = " & integer'image(conv_integer(output)) & " instead of 1010101010101010" severity warning;
+        assert(output = (conv_std_logic_vector(255, input1'length) xor conv_std_logic_vector(170, input2'length))) report "Error : 11111111 xor 10101010 = " & integer'image(conv_integer(output)) & " instead of 10101010" severity warning;
         assert(overflow = '0') report "Error: incorrect overflow for XOR test. overflow is equal to " & std_logic'image(overflow) & "instead of 0" severity warning;
 
 	 -- test 00000000  or 10101010
@@ -77,7 +77,7 @@ begin  -- TB
         input1 <= conv_std_logic_vector(0, input1'length);
         input2 <= conv_std_logic_vector(170, input2'length);
         wait for 50 ns;
-        assert(output = (conv_std_logic_vector(0, input1'length)or conv_std_logic_vector(170, input2'length))) report "Error : 00000000 or 10101010 = " & integer'image(conv_integer(output)) & " instead of " & integer'image(conv_integer("0000000000000000" or "1010101010101010")) severity warning;
+        assert(output = (conv_std_logic_vector(0, input1'length)or conv_std_logic_vector(170, input2'length))) report "Error : 00000000 or 10101010 = " & integer'image(conv_integer(output)) & " instead of " & integer'image(conv_integer("00000000" or "10101010")) severity warning;
         assert(overflow = '0') report "Error: incorrect overflow for OR test. overflow is equal to " & std_logic'image(overflow) & "instead of 0" severity warning;
 		
 	-- test 00000000  and 10101010
@@ -85,7 +85,7 @@ begin  -- TB
         input1 <= conv_std_logic_vector(0, input1'length);
         input2 <= conv_std_logic_vector(170, input2'length);
         wait for 50 ns;
-        assert(output = (conv_std_logic_vector(0, input1'length) and conv_std_logic_vector(170, input2'length))) report "Error : 00000000 and 10101010 = " & integer'image(conv_integer(output)) & " instead of 0000000000000000" severity warning;
+        assert(output = (conv_std_logic_vector(0, input1'length) and conv_std_logic_vector(170, input2'length))) report "Error : 00000000 and 10101010 = " & integer'image(conv_integer(output)) & " instead of 00000000" severity warning;
         assert(overflow = '0')  report "Error: incorrect overflow for AND test. overflow is equal to " & std_logic'image(overflow) & "instead of 0" severity warning;
   
         -- test 2+6 
@@ -101,7 +101,7 @@ begin  -- TB
         input1 <= conv_std_logic_vector(65535, input1'length);
         input2 <= conv_std_logic_vector(1, input2'length);
         wait for 50 ns;
-        assert(output = conv_std_logic_vector(0, output'length)) report "Error : 250+50 = " & integer'image(conv_integer(output)) & " instead of 300" severity warning;
+        assert(output = conv_std_logic_vector(0, output'length)) report "Error : 250+50 = " & integer'image(conv_integer(output)) & " instead of 65536" severity warning;
         assert(overflow = '1') report "Error: incorrect overflow for addition with overflow test. overflow is equal to " & std_logic'image(overflow) & "instead of 1" severity warning;
 
         -- test 250-50
@@ -146,14 +146,14 @@ begin  -- TB
         sel    <= "1010";
         input1 <= conv_std_logic_vector(240, input1'length);
         wait for 50 ns;
-        assert(output = conv_std_logic_vector(61440,output'length)) report "Error : 11110000 rotated right = " & integer'image(conv_integer(output)) & " instead of 1111000000000000" severity warning;
+        assert(output = conv_std_logic_vector(61440,output'length)) report "Error : 11110000 rotated right = " & integer'image(conv_integer(output)) & " instead of 11110000" severity warning;
         assert(overflow = '0') report "Error: incorrect overflow for rotation test. overflow is equal to " & std_logic'image(overflow) & "instead of 0" severity warning;
 
 	-- test 11110000 swap
         sel    <= "1011";
         input1 <= conv_std_logic_vector(240, input1'length);
         wait for 50 ns;
-        assert(output =  conv_std_logic_vector(61440,output'length) ) report "Error : 11110000 swapped = " & integer'image(conv_integer(output)) & " instead of 1111000000000000" severity warning;
+        assert(output =  conv_std_logic_vector(61440,output'length) ) report "Error : 11110000 swapped = " & integer'image(conv_integer(output)) & " instead of 11110000" severity warning;
         assert(overflow = '0') report "Error: incorrect overflow for swap test. overflow is equal to " & std_logic'image(overflow) & "instead of 0" severity warning;
 
 	--add test for odd width later
